@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    background: url(bg.jpg);
+    background-size: cover;
+    padding: 0;
+    font-family: "Montserrat";
+  }
+  /*CSS untuk Menu*/
+  .navbar{
+    position: fixed;
+    height: 80px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: #2f3542;
+    width: 100%;
+  }
+  .logo{
+    background: url(logo.png) no-repeat 50% 50%;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-left:20px;
+  }
+  .menu{
+    position: absolute;
+    right: 20px;
+  }
+  .menu a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+  }
+  .menu a:hover{
+    color: #2bdfff;
+  }
+  .header{
+    width: 100%;
+    height: 600px;
+    background: url(bg.png) no-repeat 50% 50%;
+    background-size: cover;
+    margin-top: 80px;
+  }
+  p{
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+  
+  }
+  @media only screen and (max-width : 600px) {
+    .navbar{
+      overflow: visible;
+    }
+    .menu{
+      width: 100%;
+      right: 0;
+      top: 80px;
+      background: #f1f1f1;
+      overflow: hidden;
+      max-height: 0;
+    }
+    .menu a{
+      display: block;
+      text-align: center;
+      padding: 10px;
+      margin: 0;
+    }
+    .show{
+      max-height: 500px;
+    }
+  }
+/* CSS untuk Konten */
+  .container{
+    padding: 178px 40px;
+    text-align: center;
+    color: white;
+  }
+  .container2{
+      padding-top: 100px;
+      text-align: center;
+      color: white;
+  }
+  .container p {
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .email-box{
+    height: 40px;
+    justify-content: center;
+    display: flex; 
+  }
+  .email-box i{
+    background: #2f3542;
+    width: 40px;
+    line-height: 40px;
+  }
+  .tbox,.btn2{
+    border: none;
+    outline: none;
+  }
+  .tbox{
+    width: 0px;
+    transition: 0.6s;
+  }
+  .email-box:hover > .tbox,.tbox:focus{
+    width: 260px;
+    padding: 0 10px;
+  }
+  .btn2{
+    background: #2f3542;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+/* CSS Footer */
+  .footer{
+      width: 100%;
+      height: 40px;
+      margin: auto;
+      background: #2f3542;
+      padding-top: 8px;
+      position: fixed;
+      top: 93%; 
+  }
+/* CSS untuk Profile Card */
+.card{
+    width: 400px;
+    height: 450px;
+    padding: 20px;
+    background: rgb(126, 126, 126);
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
+    box-shadow: 1px 1px 12px rgb(84, 84, 207);
+}
+.card p{
+    color: #2f3542;
+    font-size: 12px;
+}
+.card span{
+    color: #2f3542;
+    font-size: 14px;
+}
+.image{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 28px auto;
+}
+.image img{
+    width: 100%;
+    height: 120%;
+}
+h1{
+    color: #191f57;
+    margin: 20px 0 0 0;
+    font-size: 22px;
+    text-transform: uppercase;
+}
